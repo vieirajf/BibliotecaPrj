@@ -25,6 +25,8 @@
 			<ul>
 				<li><a href="<c:url value="/usuario/lista"/>">Lista Usuários</a></li>
 				<li><a href="<c:url value="/usuario/formulario"/>">Novo Usuário</a></li>
+				<li><a href="<c:url value="/livro/lista"/>">Lista Livros</a></li>
+				<li><a href="<c:url value="/livro/formulario"/>">Novo Livro</a></li>
 			</ul>
 		</div>
 		<div id="content">

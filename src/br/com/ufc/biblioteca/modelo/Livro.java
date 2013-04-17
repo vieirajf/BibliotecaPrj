@@ -11,10 +11,8 @@ public class Livro {
 	private Long id;
 	private String isbn_10;
 	private String titulo;
-	private String autores;
 	private String edicao;
 	private int ano;
-	private String palavras_chave;
 	private String idioma;
 	
 	public Long getId() {
@@ -38,13 +36,6 @@ public class Livro {
 		this.titulo = titulo;
 	}
 	
-	public String getAutores() {
-		return autores;
-	}
-	public void setAutores(String autores) {
-		this.autores = autores;
-	}
-	
 	public String getEdicao() {
 		return edicao;
 	}
@@ -57,13 +48,6 @@ public class Livro {
 	}
 	public void setAno(int ano) {
 		this.ano = ano;
-	}
-	
-	public String getPalavras_chave() {
-		return palavras_chave;
-	}
-	public void setPalavras_chave(String palavras_chave) {
-		this.palavras_chave = palavras_chave;
 	}
 	
 	public String getIdioma() {
