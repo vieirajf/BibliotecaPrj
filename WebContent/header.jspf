@@ -1,51 +1,62 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <html>
-	<head>
-		<title>Good Buy</title>
-		<link href="<c:url value="/goodbuy.css"/>" rel="stylesheet" type="text/css" media="screen" />
-		<link href="<c:url value="/javascripts/jquery.autocomplete.css"/>" rel="stylesheet" type="text/css" media="screen" />
-		<script type="text/javascript" src="<c:url value="/javascripts/jquery-1.3.2.min.js"/>"></script>
-		<script type="text/javascript" src="<c:url value="/javascripts/jquery.validate.min.js"/>"></script>
-		<script type="text/javascript" src="<c:url value="/javascripts/jquery.autocomplete.min.js"/>"></script>
-		<script type="text/javascript" src="<c:url value="/javascripts/jquery.puts.js"/>"></script>
-		<script type="text/javascript" src="<c:url value="/javascripts/button.js"/>"></script>
-		<fmt:setLocale value="pt_br"/>
-	</head>
-	
+<head>
+<title>Good Buy</title>
+<link href="<c:url value="/goodbuy.css"/>" rel="stylesheet"
+	type="text/css" media="screen" />
+<link href="<c:url value="/nav.css"/>" rel="stylesheet" type="text/css"
+	media="screen" />
+<link href="<c:url value="/javascripts/jquery.autocomplete.css"/>"
+	rel="stylesheet" type="text/css" media="screen" />
+
+<script type="text/javascript"
+	src="<c:url value="/javascripts/jquery-1.3.2.min.js"/>"></script>
+<script type="text/javascript"
+	src="<c:url value="/javascripts/jquery.validate.min.js"/>"></script>
+<script type="text/javascript"
+	src="<c:url value="/javascripts/jquery.autocomplete.min.js"/>"></script>
+<script type="text/javascript"
+	src="<c:url value="/javascripts/jquery.puts.js"/>"></script>
+<script type="text/javascript"
+	src="<c:url value="/javascripts/topMenu.js"/>"></script>
+<script type="text/javascript"
+	src="<c:url value="/javascripts/top10.js"/>"></script>
+<fmt:setLocale value="pt_br" />
+</head>
+
 <body>
-	<div id="header" class="white-gradient">
-		<ul class="topMenu">
-			<li class="menuItem">
-				<a href="<c:url value="/index.jsp"/>"><img src="<c:url value="/img/home.jpg"/>" alt="Home" width="50px" height="50px"></a>
-			</li>
-			<li class="menuItem">
-				<a href="<c:url value="/livro/lista"/>">Livros</a>
-			</li>
-			<li class="menuItem">
-				<a>Usuários</a>
-				<li class="subMenuItem">
-					<a href="<c:url value="/usuario/lista"/>">Listar usuários</a>
-				</li>
-			</li>
-			<li class="menuItem">
-				<a href="<c:url value="/geral/contato"/>">Contato</a>
-			</li>
-		</ul>
-		
-	</div>
 	<div id="erros">
 		<ul>
 		</ul>
 	</div>
 	<div id="body">
-		<div id="menu">
+
+		<nav id="topNav" class="white-gradient" class="boldText">
 			<ul>
-				<li><a href="<c:url value="/usuario/lista"/>">Lista Usuários</a></li>
-				<li><a href="<c:url value="/usuario/formulario"/>">Novo Usuário</a></li>
-				<li><a href="<c:url value="/livro/lista"/>">Lista Livros</a></li>
-				<li><a href="<c:url value="/livro/formulario"/>">Novo Livro</a></li>
+			
+				<li><a href="<c:url value="/index.jsp"/>" title="Home">Home</a></li>
+				
+				<li><a href="#" title="Livros">Livros</a>
+						<ul class="silver-gradient">
+							<li><a href="<c:url value="/livro/lista"/>" title="Livros">Listar
+									Livros</a>
+							<li><a href="<c:url value="/livro/formulario"/>">Adicionar Livro</a></li>
+						</ul>
+				</li>
+				
+				<li><a href="#" title="Usuários">Usuários</a>
+						<ul class="silver-gradient">
+							<li><a href="<c:url value="/usuario/lista"/>">Listar Usuários</a></li>
+							<li><a href="<c:url value="/usuario/formulario"/>">Adicionar Usuário</a></li>
+						</ul>
+				</li>
+				
+				<li><a href="<c:url value="/geral/ranking"/>" title="TOP10">TOP10</a></li>
+				
+				<li><a href="<c:url value="/geral/contato"/>" title="Contato">Contato</a></li>
+				
 			</ul>
-		</div>
+		</nav>
+
 		<div id="content">
-		

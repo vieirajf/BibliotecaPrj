@@ -8,4 +8,7 @@ public class GeralController {
 	public void contato(){
 	}
 	
+	public void ranking(){
+	}
+	
 }
