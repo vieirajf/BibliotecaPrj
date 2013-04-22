@@ -9,11 +9,29 @@
 		<script type="text/javascript" src="<c:url value="/javascripts/jquery.validate.min.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/javascripts/jquery.autocomplete.min.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/javascripts/jquery.puts.js"/>"></script>
+		<script type="text/javascript" src="<c:url value="/javascripts/button.js"/>"></script>
 		<fmt:setLocale value="pt_br"/>
 	</head>
 	
 <body>
-	<div id="header">
+	<div id="header" class="white-gradient">
+		<ul class="topMenu">
+			<li class="menuItem">
+				<a href="<c:url value="/index.jsp"/>"><img src="<c:url value="/img/home.jpg"/>" alt="Home" width="50px" height="50px"></a>
+			</li>
+			<li class="menuItem">
+				<a href="<c:url value="/livro/lista"/>">Livros</a>
+			</li>
+			<li class="menuItem">
+				<a>Usuários</a>
+				<li class="subMenuItem">
+					<a href="<c:url value="/usuario/lista"/>">Listar usuários</a>
+				</li>
+			</li>
+			<li class="menuItem">
+				<a href="<c:url value="/geral/contato"/>">Contato</a>
+			</li>
+		</ul>
 		
 	</div>
 	<div id="erros">
