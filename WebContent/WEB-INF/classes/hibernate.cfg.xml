@@ -9,7 +9,7 @@
    postgres
   </property>
   <property name="hibernate.connection.password">
-   171090
+   postgres
   </property>
   <property name="hibernate.connection.url">
    jdbc:postgresql://localhost:5432/biblioteca
