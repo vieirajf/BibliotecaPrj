@@ -18,7 +18,6 @@ public class AutorController {
 		this.result = result;
 	}
 	
-
 	public List<Autor> lista(){
 		return dao.listaTudo();
 	}

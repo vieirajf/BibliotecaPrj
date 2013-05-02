@@ -1,13 +1,21 @@
 package br.com.ufc.biblioteca.modelo;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 
 @Entity
 public class Usuario {
 
 	@Id @GeneratedValue
+	@Column(name="id")
 	private Long id;
 	private String matricula;
 	private String nome;
@@ -15,6 +23,12 @@ public class Usuario {
 	private String curso;
 	private String tipo;
 
+	
+	@ManyToMany
+	@JoinTable(name="usuario_livro", joinColumns={@JoinColumn(name="id_livro", unique=false,  nullable=false, insertable=true)},
+	   inverseJoinColumns={@JoinColumn(name="id_usuario",unique=false,  nullable=false, insertable=true)})
+	private Collection<Livro> livro = new ArrayList<Livro>();
+	
 	public Long getId() {
 		return id;
 	}

@@ -25,5 +25,7 @@
   <property name="format_sql">true</property>
   <mapping class="br.com.ufc.biblioteca.modelo.Usuario"/>
   <mapping class="br.com.ufc.biblioteca.modelo.Livro"/>
+  <mapping class="br.com.ufc.biblioteca.modelo.Autor"/>
+  <mapping class="br.com.ufc.biblioteca.modelo.Palavrachave"/>
   </session-factory>
 </hibernate-configuration>

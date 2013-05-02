@@ -1,5 +1,6 @@
 package br.com.ufc.biblioteca.modelo;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -8,12 +9,14 @@ import javax.persistence.Id;
 public class Livro {
 
 	@Id @GeneratedValue
+	@Column(name="id")
 	private Long id;
 	private String isbn_10;
 	private String titulo;
 	private String edicao;
 	private int ano;
 	private String idioma;
+	
 	
 	public Long getId() {
 		return id;

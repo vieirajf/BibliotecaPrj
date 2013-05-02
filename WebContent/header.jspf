@@ -34,9 +34,9 @@
 
 		<nav id="topNav" class="white-gradient" class="boldText">
 			<ul>
-			
+
 				<li><a href="<c:url value="/index.jsp"/>" title="Home">Home</a></li>
-				
+
 				<li><a href="#" title="Livros">Livros</a>
 						<ul class="silver-gradient">
 							<li><a href="<c:url value="/livro/lista"/>" title="Livros">Listar
@@ -44,18 +44,18 @@
 							<li><a href="<c:url value="/livro/formulario"/>">Adicionar Livro</a></li>
 						</ul>
 				</li>
-				
+
 				<li><a href="#" title="Usuários">Usuários</a>
 						<ul class="silver-gradient">
 							<li><a href="<c:url value="/usuario/lista"/>">Listar Usuários</a></li>
 							<li><a href="<c:url value="/usuario/formulario"/>">Adicionar Usuário</a></li>
 						</ul>
 				</li>
-				
+
 				<li><a href="<c:url value="/geral/ranking"/>" title="TOP10">TOP10</a></li>
-				
+
 				<li><a href="<c:url value="/geral/contato"/>" title="Contato">Contato</a></li>
-				
+
 			</ul>
 		</nav>
 
